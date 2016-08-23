@@ -17,7 +17,7 @@ RUN set -x \
     && apk del tzdata \
     && rm -rf /var/cache/apk/*
 
-EXPOSE 8514/tcp
+EXPOSE 8514/udp
 USER default
 
 ENTRYPOINT ["/usr/bin/socat"]
